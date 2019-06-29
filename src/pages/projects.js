@@ -29,7 +29,7 @@ const StyledLink = styled(Link)`
 const ProjectsPage = ({ data }) => (
   <Layout>
     <Section>
-      <h2>Projects by RüDev</h2>
+      <h2>Projects</h2>
       <p>Welcome to the project portfolio of Rüdev. Check out the ResumeBot!</p>
       {data.allMarkdownRemark.edges
         .filter(project => project.node.frontmatter.category === "project-post")

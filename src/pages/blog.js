@@ -29,7 +29,7 @@ const StyledLink = styled(Link)`
 const BlogPage = ({ data }) => (
   <Layout>
     <Section>
-      <h2>RüBlog</h2>
+      <h2>Blog</h2>
       <p>
         Read all about it! Berlin web development company writes about web
         development and more!
