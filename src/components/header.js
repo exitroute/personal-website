@@ -33,9 +33,9 @@ const Header = () => (
     <Wrapper>
       <div>
         <h1>
-          <TitleLink to="/">RüDev</TitleLink>
+          <TitleLink to="/">Ryan O'Shea</TitleLink>
         </h1>
-        <small>#ryanjamesoshea</small>
+        <small>#dvlpmnt #mngmnt #dsgn</small>
       </div>
       <Menu />
     </Wrapper>
