@@ -31,7 +31,11 @@ const ProjectsPage = ({ data }) => (
       <h2>Projects</h2>
       <div className="wrapper">
         <p>
-          Welcome to the project portfolio of Rüdev. Check out the ResumeBot!
+          Here's what I have been working on over the last year or so.
+        </p>
+        <p>
+          This list includes work that I did before I learned how to code but was 
+          working on websites anyway.
         </p>
         {data.allMarkdownRemark.edges
           .filter(

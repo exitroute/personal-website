@@ -31,8 +31,8 @@ const BlogPage = ({ data }) => (
       <h2>Blog</h2>
       <div className="wrapper">
         <p>
-          Read all about it! Berlin web development company writes about web
-          development and more!
+          Berlin web developer writes about web development, learning 
+          web development, and his projects. 
         </p>
         {data.allMarkdownRemark.edges
           .filter(post => post.node.frontmatter.category === "blog-post")
