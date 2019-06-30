@@ -6,7 +6,6 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import Section from "../components/section"
 
-
 const BlogContainer = styled.div`
   @media (min-width: 992px) {
     grid-column-start: 2;
@@ -30,20 +29,22 @@ const BlogPage = ({ data }) => (
   <Layout>
     <Section>
       <h2>Blog</h2>
-      <p>
-        Read all about it! Berlin web development company writes about web
-        development and more!
-      </p>
-      {data.allMarkdownRemark.edges
-        .filter(post => post.node.frontmatter.category === "blog-post")
-        .map(post => (
-          <BlogContainer key={post.node.id}>
-            <StyledLink to={post.node.frontmatter.path}>
-              <h3>{post.node.frontmatter.title}</h3>
-            </StyledLink>
-            <p>{post.node.excerpt}</p>
-          </BlogContainer>
-        ))}
+      <div className="wrapper">
+        <p>
+          Read all about it! Berlin web development company writes about web
+          development and more!
+        </p>
+        {data.allMarkdownRemark.edges
+          .filter(post => post.node.frontmatter.category === "blog-post")
+          .map(post => (
+            <BlogContainer key={post.node.id}>
+              <StyledLink to={post.node.frontmatter.path}>
+                <h3>{post.node.frontmatter.title}</h3>
+              </StyledLink>
+              <p>{post.node.excerpt}</p>
+            </BlogContainer>
+          ))}
+      </div>
     </Section>
   </Layout>
 )

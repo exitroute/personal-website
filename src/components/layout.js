@@ -12,14 +12,13 @@ const Container = styled.div`
   display: grid;
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;
+  header,
   main,
   footer {
     padding: 0px 1.0875rem 1.45rem;
-    padding-top: 0;
-    margin-bottom: 2rem;
     section {
       max-width: 600px;
-      margin: 0 auto;
+      margin: 0 auto 3.5rem;
       @media (min-width: 992px) {
         max-width: none;
         display: grid;
@@ -27,12 +26,14 @@ const Container = styled.div`
         grid-auto-rows: auto;
         column-gap: 1rem;
         grid-column-start: 2;
+        .wrapper {
+          grid-row-start: 2;
+          grid-column-start: 2;
+        }
         h2 {
           justify-self: end;
           grid-column: 1 / 1;
-        }
-        p, ul, dl {
-          grid-column-start: 2;
+          margin-bottom: 0;
         }
       }
     }

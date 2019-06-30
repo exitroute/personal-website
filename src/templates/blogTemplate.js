@@ -4,6 +4,9 @@ import Layout from "../components/layout"
 
 import styled from "styled-components"
 
+const Title = styled.h2`
+  margin-bottom: 0.25rem;
+`
 const Author = styled.p`
   && {
     grid-column-start: 1;
@@ -12,8 +15,13 @@ const Author = styled.p`
     }
   }
 `
-const Title = styled.h2`
-  margin-bottom: 0.25rem;
+const Div = styled.div`
+  @media (min-width: 992px) {
+    &.wrapper {
+      padding-top: 3rem;
+      grid-column-start: 2;
+    }
+  }
 `
 
 export default function blogTemplate({ data }) {
@@ -24,7 +32,7 @@ export default function blogTemplate({ data }) {
       <section>
         <Title>{frontmatter.title}</Title>
         <Author>by {frontmatter.author}</Author>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
+        <Div className="wrapper" dangerouslySetInnerHTML={{ __html: html }} />
       </section>
     </Layout>
   )

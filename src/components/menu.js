@@ -4,24 +4,19 @@ import styled from "styled-components"
 
 const Nav = styled.nav`
   display: flex;
-  @media (min-width: 768px) and (max-width: 992px) {
+  @media (min-width: 768px) {
     justify-content: flex-end;
+    max-width: 600px;
   }
 `
-const NavList = styled.ul`
-  
+const NavList = styled.ul` 
   list-style: none;
   display: flex;
   align-items: center;
   margin-bottom: 0;
-  margin-left: 0rem;
-
+  margin-left: -0.5rem;
   li {
     margin: 0 2px;
-  }
-
-  @media (min-width: 992px) {
-    margin-left: 0.5rem;
   }
 `
 const NavLink = styled(Link).attrs({
@@ -32,13 +27,11 @@ const NavLink = styled(Link).attrs({
   display: block;
   margin: 0.25rem 0;
   padding: 0.5rem;
-
   :hover {
     background: #85bb65;
     color: #fff;
     transition-duration: 500ms;
   }
-
   &.active {
     background: pink;
     :hover {

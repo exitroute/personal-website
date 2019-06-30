@@ -6,7 +6,6 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import Section from "../components/section"
 
-
 const ProjectContainer = styled.div`
   @media (min-width: 992px) {
     grid-column-start: 2;
@@ -30,17 +29,23 @@ const ProjectsPage = ({ data }) => (
   <Layout>
     <Section>
       <h2>Projects</h2>
-      <p>Welcome to the project portfolio of Rüdev. Check out the ResumeBot!</p>
-      {data.allMarkdownRemark.edges
-        .filter(project => project.node.frontmatter.category === "project-post")
-        .map(project => (
-          <ProjectContainer key={project.node.id}>
-            <StyledLink to={project.node.frontmatter.path}>
-              <h3>{project.node.frontmatter.title}</h3>
-            </StyledLink>
-            <p>{project.node.excerpt}</p>
-          </ProjectContainer>
-        ))}
+      <div className="wrapper">
+        <p>
+          Welcome to the project portfolio of Rüdev. Check out the ResumeBot!
+        </p>
+        {data.allMarkdownRemark.edges
+          .filter(
+            project => project.node.frontmatter.category === "project-post"
+          )
+          .map(project => (
+            <ProjectContainer key={project.node.id}>
+              <StyledLink to={project.node.frontmatter.path}>
+                <h3>{project.node.frontmatter.title}</h3>
+              </StyledLink>
+              <p>{project.node.excerpt}</p>
+            </ProjectContainer>
+          ))}
+      </div>
     </Section>
   </Layout>
 )

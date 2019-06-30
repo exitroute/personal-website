@@ -4,16 +4,24 @@ import Layout from "../components/layout"
 
 import styled from "styled-components"
 
+const Title = styled.h2`
+  margin-bottom: 0.25rem;
+`
 const Role = styled.p`
   && {
     grid-column-start: 1;
     @media (min-width: 992px) {
-      text-align: right; 
+      text-align: right;
     }
   }
 `
-const Title = styled.h2`
-  margin-bottom: 0.25rem;
+const Div = styled.div`
+  @media (min-width: 992px) {
+    &.wrapper {
+      padding-top: 3rem;
+      grid-column-start: 2;
+    }
+  }
 `
 
 export default function projectTemplate({ data,}) {
@@ -24,7 +32,7 @@ export default function projectTemplate({ data,}) {
       <section>
         <Title>{frontmatter.title}</Title>
         <Role>{frontmatter.role}</Role>
-        <div
+        <Div className="wrapper" 
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </section>

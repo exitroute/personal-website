@@ -7,16 +7,20 @@ const ContactPage = () => (
   <Layout>
     <Section>
       <h2>Contact</h2>
-      <p>Ryan loves to hear from new people!</p>
-      <p>
-        Drop him a line at:&nbsp;
-        <a href="mailto: ryan.oshea@exitroute.org">ryan.oshea@exitroute.org</a>
-      </p>
-      <p>Or at these social media platroms:</p>
-      <ul>
-        <li>Github</li>
-        <li>Linkedin</li>
-      </ul>
+      <div className="wrapper">
+        <p>Ryan loves to hear from new people!</p>
+        <p>
+          Drop him a line at:&nbsp;
+          <a href="mailto: ryan.oshea@exitroute.org">
+            ryan.oshea@exitroute.org
+          </a>
+        </p>
+        <p>Or at these social media platroms:</p>
+        <ul>
+          <li>Github</li>
+          <li>Linkedin</li>
+        </ul>
+      </div>
     </Section>
   </Layout>
 )
