@@ -33,6 +33,9 @@ const Wrapper = styled.div`
 `
 const TitleLink = styled(Link)`
   color: #000;
+  :hover {
+    color: #85bb65;    
+  }
   text-decoration: none;
 `
 
