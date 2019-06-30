@@ -19,10 +19,10 @@ const DefList = styled.dl`
         float: left;
         clear: left;
         text-align: right;
-        width: 7rem;
+        width: 8rem;
       }
       dd {
-        margin: 0 0 0.15rem 7.5rem;
+        margin: 0 0 0 8.5rem;
       }
     }
   }
@@ -164,7 +164,16 @@ const AboutPage = () => (
           <dt>Development</dt>
           <dd>July 2018 - July 2019</dd>
           <dd>Web Development Trainee</dd>
-          <dd>Digital Career Institute, Berlin</dd>
+          <dd>
+            <Link
+              href="https://digitalcareerinstitute.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Digital Career Institute
+            </Link>
+            , Berlin
+          </dd>
         </div>
         <div>
           <dt>Management</dt>
