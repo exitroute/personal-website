@@ -8,19 +8,27 @@ import Menu from "./menu"
 const Wrapper = styled.div`
   display: grid;
   align-items: center;
-  margin: 0 auto;
-  padding: 1.45rem 1.0875rem;
+  margin: 3rem auto 2rem;
+  max-width: 600px;
+  @media (min-width: 768px) {
+    grid-template-columns: 16rem 1fr;
+    column-gap: 1rem;
+    max-width: 800px;
+  }
+  @media (min-width: 992px) {
+    max-width: none;
+  }
   div {
+    margin-bottom: 1rem;
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+    }
     h1 {
       margin-bottom: 0.125rem;
     }
     @media (min-width: 992px) {
         text-align: right;
       }
-  }
-  @media (min-width: 768px) {
-    grid-template-columns: 16rem 1fr;
-    column-gap: 1rem;
   }
 `
 const TitleLink = styled(Link)`
