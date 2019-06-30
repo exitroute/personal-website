@@ -31,7 +31,7 @@ const Container = styled.div`
           justify-self: end;
           grid-column: 1 / 1;
         }
-        p, dl {
+        p, ul, dl {
           grid-column-start: 2;
         }
       }
