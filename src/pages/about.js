@@ -42,12 +42,12 @@ const AboutPage = () => (
       <h2>About</h2>
       <div className="wrapper">
         <p>
-          Ryan O'Shea is a trained web developer living and working in Berlin.
+          Ryan O'Shea is a trained web developer from Dalry, Scotland  
+          who has lived and worked in Berlin, Germany since 2003.
         </p>
         <p>
-          He loves learning and fixing things. Web development gives him daily
-          satisfaction since there is always something broken, buggy or new to
-          learn.
+          He loves to build, learn and fix things. Web development gives him daily
+          satisfaction, since there is always something new to make, or bugs to fix.
         </p>
         <p>
           Before web development, Ryan had a 12 year career in edtech with&nbsp;
@@ -66,7 +66,7 @@ const AboutPage = () => (
           >
             Pearson
           </Link>{" "}
-          as a manager and trainer.
+          as a manager, trainer and teacher.
         </p>
         <p>
           He also has a education and training in architectural design from
