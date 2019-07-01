@@ -31,11 +31,11 @@ const ProjectsPage = ({ data }) => (
       <h2>Projects</h2>
       <div className="wrapper">
         <p>
-          Here's what I have been working on over the last year or so.
+          Here's what I have been working on since September 2017.
         </p>
         <p>
-          This list includes work that I did before I learned how to code but was 
-          working on websites anyway.
+          This list includes work that I did before I learned how to code, but had to 
+          develop and launch a website anyway.
         </p>
         {data.allMarkdownRemark.edges
           .filter(

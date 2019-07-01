@@ -117,7 +117,7 @@ const AboutPage = () => (
         <p>
           Since making the decision to develop a third career, Ryan has added a
           set of tools and skills need to work on web applications in the MERN
-          stack
+          stack.
         </p>
         <div>
           <dt>Core</dt>
