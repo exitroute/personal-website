@@ -5,6 +5,9 @@ import Layout from "../components/layout"
 import styled from "styled-components"
 
 const Title = styled.h2`
+  @media (min-width: 992px) {
+    text-align: right;
+  }
   margin-bottom: 0.25rem;
 `
 const Role = styled.p`
@@ -24,17 +27,15 @@ const Div = styled.div`
   }
 `
 
-export default function projectTemplate({ data,}) {
-  const { markdownRemark } = data 
+export default function projectTemplate({ data }) {
+  const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
   return (
     <Layout>
       <section>
         <Title>{frontmatter.title}</Title>
         <Role>{frontmatter.role}</Role>
-        <Div className="wrapper" 
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+        <Div className="wrapper" dangerouslySetInnerHTML={{ __html: html }} />
       </section>
     </Layout>
   )
