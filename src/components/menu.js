@@ -1,9 +1,10 @@
 import React from "react"
-import Link from "gatsby-link"
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 import styled from "styled-components"
 
 const Nav = styled.nav`
   display: flex;
+  transition: all 1s ease-out;
   @media (min-width: 768px) {
     justify-content: flex-end;
     max-width: 600px;
