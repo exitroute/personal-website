@@ -8,12 +8,19 @@ main {
   grid-template-rows: 0.66fr 1fr;
   column-gap: 1rem;
   height: 100vh;
+  background-image: url("../images/bg.jpg")
 }
 
 .site-title {
+  color: white;
   align-self: end;
   text-align: center;
+  text-shadow: 10px 10px 10px #222;
 }
+
+.site-title p {
+  font-weight: 800; 
+};
 
 .nav {
   align-self: start;
