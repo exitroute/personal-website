@@ -8,7 +8,3 @@ tags: ["project", "squarespace"]
 ---
 
 ### Overview
-
-### Techstack
-
-### Links

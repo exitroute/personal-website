@@ -8,8 +8,5 @@ tags: ["project", "carrd"]
 ---
 ### Overview
 
-### Techstack
-
-### Links
 
 [Github](https://www.eigenenglish.de)

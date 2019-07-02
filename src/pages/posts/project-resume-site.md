@@ -8,12 +8,15 @@ tags: ["project", "react"]
 ---
 ### Overview
 
+A web application that generates unique URLs so that job candidates can track who sees their work. 
+
 ### Techstack
 
-- React
-- Express
-- Now
+- Bootstrap
+- EJS
+- Webpack
+- Node 
 
 ### Links
 
-[Github](https://www.github.com/exitroute)
+[Github](https://exitroute.github.com/resume)

@@ -8,8 +8,5 @@ tags: ["project", "Berlin", buisness]
 ---
 ### Overview
 
-### Techstack
-
-### Links
 
 [Website](https://www.lostintranslation.de)

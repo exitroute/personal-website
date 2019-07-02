@@ -9,6 +9,4 @@ tags: ["project", "react"]
 
 ### Overview
 
-### Techstack
-
-### Links
+An agency that targets low value markets and creates jobs for workers entering the development job market.

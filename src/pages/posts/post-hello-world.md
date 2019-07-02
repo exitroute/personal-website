@@ -7,7 +7,7 @@ author: "Ryan James O'Shea"
 tags: ["project", "react"]
 ---
 
-Or just how  very is the situation normal?  
+Or is the situation normal?  
 
 ### Links
 

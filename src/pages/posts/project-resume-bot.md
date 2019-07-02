@@ -8,8 +8,5 @@ tags: ["project", "react"]
 ---
 ### Overview
 
-### Techstack
-
-### Links
 
 [Github](https://www.github.com/exitroute)
