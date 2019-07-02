@@ -10,6 +10,7 @@ const Wrapper = styled.div`
   align-items: center;
   margin: 3rem auto 2rem;
   max-width: 600px;
+  transition: all 1s ease-in-out;
   @media (min-width: 768px) {
     grid-template-columns: 16rem 1fr;
     column-gap: 1rem;
