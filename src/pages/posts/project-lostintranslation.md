@@ -2,7 +2,7 @@
 path: "/projects/lostintranslation"
 category: "project-post"
 date: "2019-07-01"
-title: "Onboarding Service For Cities"
+title: "Onboarding Service"
 role: "Founder"
 tags: ["project", "Berlin", buisness]
 ---
