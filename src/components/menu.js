@@ -4,7 +4,6 @@ import styled from "styled-components"
 
 const Nav = styled.nav`
   display: flex;
-  transition: all 1s ease-out;
   @media (min-width: 768px) {
     justify-content: flex-end;
     max-width: 600px;
