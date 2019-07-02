@@ -7,7 +7,7 @@ const IndexPage = props => (
     <div className={styles.wrapper}>
       <div className={styles.siteTitle}>
         <h1>Ryan O'Shea</h1>
-        <p>#development<br />#management #design<br />#berlin</p>
+        <p className={styles.tags}>#development<br />#management #design<br />#berlin</p>
       </div>
       <ul className={styles.nav}>
         <li>
