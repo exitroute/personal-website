@@ -19,7 +19,7 @@ const NavList = styled.ul`
     margin: 0 2px;
   }
 `
-const NavLink = styled(Link).attrs({
+const NavLink = styled(AniLink).attrs({
   activeClassName: "active",
   fade: "fade",
 })`
