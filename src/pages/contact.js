@@ -1,7 +1,23 @@
 import React from "react"
+import styled from "styled-components"
 
 import Section from "../components/section"
 import Layout from "../components/layout"
+
+
+const ContactList = styled.ul`
+  list-style: none;
+`
+const A = styled.a.attrs({
+  target: "_blank",
+  rel: "noopener noreferrer",
+})`
+  text-decoration: none;
+  :hover {
+    text-decoration: underline;
+    transition: 250ms;
+  }
+`
 
 const ContactPage = () => (
   <Layout>
@@ -16,10 +32,14 @@ const ContactPage = () => (
           </a>
         </p>
         <p>Or at these social media platroms:</p>
-        <ul>
-          <li>Github</li>
-          <li>Linkedin</li>
-        </ul>
+        <ContactList>
+          <li>
+            Github:{" "}
+            <A href="https://github.com/exitroute">@exitroute</A>
+          </li>
+          <li>Linkedin{" "}
+            <A href="https://github.com/exitroute">@ryanjamesoshea</A></li>
+        </ContactList>
       </div>
     </Section>
   </Layout>
