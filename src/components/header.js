@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 import styled from "styled-components"
 
@@ -31,7 +31,7 @@ const Wrapper = styled.div`
       }
   }
 `
-const TitleLink = styled(Link)`
+const TitleAniLink = styled(AniLink)`
   color: #000;
   :hover {
     color: #85bb65;    
@@ -44,7 +44,7 @@ const Header = () => (
     <Wrapper>
       <div>
         <h1>
-          <TitleLink to="/">Ryan O'Shea</TitleLink>
+          <TitleAniLink fade to="/" duration={0.2}>Ryan O'Shea</TitleAniLink>
         </h1>
         <small>#dvlpmnt #mngmnt #dsgn</small>
       </div>

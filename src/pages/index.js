@@ -1,6 +1,7 @@
 import React from "react"
 import styles from "./index.module.css"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink";
+
 
 const IndexPage = props => (
   <main>
@@ -11,13 +12,13 @@ const IndexPage = props => (
       </div>
       <ul className={styles.nav}>
         <li>
-          <Link to="/about">About</Link>
+          <AniLink fade to="/about" duration={0.2} >About</AniLink>
         </li>
         <li>
-          <Link to="/projects">Projects</Link>
+          <AniLink fade to="/projects" duration={0.2} >Projects</AniLink>
         </li>
         <li>
-          <Link to="/blog">Blog</Link>
+          <AniLink fade to="/blog" duration={0.2} >Blog</AniLink>
         </li>
       </ul>
     </div>

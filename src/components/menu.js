@@ -21,6 +21,7 @@ const NavList = styled.ul`
 `
 const NavLink = styled(Link).attrs({
   activeClassName: "active",
+  fade: "fade",
 })`
   color: #000;
   text-decoration: none;
