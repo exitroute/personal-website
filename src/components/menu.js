@@ -1,5 +1,5 @@
 import React from "react"
-import AniLink from "gatsby-plugin-transition-link/AniLink";
+import Link from "gatsby-link"
 import styled from "styled-components"
 
 const Nav = styled.nav`
@@ -19,9 +19,8 @@ const NavList = styled.ul`
     margin: 0 2px;
   }
 `
-const NavLink = styled(AniLink).attrs({
+const NavLink = styled(Link).attrs({
   activeClassName: "active",
-  fade: "fade",
 })`
   color: #000;
   text-decoration: none;
