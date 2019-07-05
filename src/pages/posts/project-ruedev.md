@@ -7,6 +7,4 @@ role: "Founder"
 tags: ["project", "react"]
 ---
 
-### Overview
-
 An agency that targets low value markets and creates jobs for workers entering the development job market.

@@ -6,7 +6,6 @@ title: "Resume Site"
 role: "Developer"
 tags: ["project", "react"]
 ---
-### Overview
 
 A web application that generates unique URLs so that job candidates can track who sees their work. 
 
