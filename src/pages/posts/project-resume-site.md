@@ -9,10 +9,7 @@ tags: ["project", "react"]
 
 **A web application that generates unique URLs so that job candidates can track who sees their work.** 
 
-This project was built using the tutorial from Douglas Matoso:
-
-[Build a static site generator in 40 lines with Node.js](https://www.webdevdrops.com/build-static-site-generator-nodejs-8969ebe34b22/)
-
+[See the code](https://github.com/exitroute/resume)
 
 ### Techstack
 ---
@@ -20,6 +17,10 @@ This project was built using the tutorial from Douglas Matoso:
 - EJS
 - Webpack
 - Node 
+
+Also using a static site generator by Douglas Matoso:
+
+[Build a static site generator in 40 lines with Node.js](https://www.webdevdrops.com/build-static-site-generator-nodejs-8969ebe34b22/)
 
 ### Background
 ---
@@ -85,6 +86,3 @@ That last point made me smile.
 The project is deployed and running as a very early prototype. Enhancements 
 are planned.  
 
-### Links
----
-[Github](https://exitroute.github.com/resume)
