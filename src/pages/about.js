@@ -39,7 +39,7 @@ const Link = styled.a`
 const AboutPage = () => (
   <Layout>
     <Section>
-      <h2>About</h2>
+      <h2 className="about-header">About</h2>
       <div className="wrapper">
         <p>
           Ryan O'Shea is a trained web developer from Dalry, Scotland  
@@ -112,7 +112,7 @@ const AboutPage = () => (
       </div>
     </Section>
     <Section>
-      <h2>Tech Stack</h2>
+      <h2 className="about-header">Tech Stack</h2>
       <DefList className="wrapper">
         <p>
           Since making the decision to develop a third career, Ryan has added a
@@ -146,7 +146,7 @@ const AboutPage = () => (
       </DefList>
     </Section>
     <Section>
-      <h2>Resume</h2>
+      <h2 className="about-header">Resume</h2>
       <div className="wrapper">
         <p>
           This is the short version of Ryan's career and is optimised to support

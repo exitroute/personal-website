@@ -30,7 +30,7 @@ const Container = styled.div`
           grid-row-start: 2;
           grid-column-start: 2;
         }
-        h2 {
+        .about-header {
           justify-self: end;
           grid-column: 1 / 1;
           margin-bottom: 0;

@@ -28,7 +28,7 @@ const StyledLink = styled(Link)`
 const ProjectsPage = ({ data }) => (
   <Layout>
     <Section>
-      <h2>Projects</h2>
+      <h2 className="about-header">Projects</h2>
       <div className="wrapper">
         <p>
           Here's what I have been working on since September 2017.

@@ -22,7 +22,7 @@ const A = styled.a.attrs({
 const ContactPage = () => (
   <Layout>
     <Section>
-      <h2>Contact</h2>
+      <h2 className="about-header">Contact</h2>
       <div className="wrapper">
         <p>Ryan loves to hear from new people!</p>
         <p>

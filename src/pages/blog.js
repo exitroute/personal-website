@@ -28,7 +28,7 @@ const StyledLink = styled(Link)`
 const BlogPage = ({ data }) => (
   <Layout>
     <Section>
-      <h2>Blog</h2>
+      <h2 className="about-header">Blog</h2>
       <div className="wrapper">
         <p>
           Berlin web developer writes about web development, learning 
