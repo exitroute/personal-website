@@ -6,20 +6,35 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Ryan O'Shea`,
-    description: `Website for Ryan O'Shea`,
-    author: `Ryan O'Shea`,
+    title: "Ryan O'Shea",
+    description: "Website for Ryan O'Shea",
+    author: "Ryan O'Shea",
   },
   plugins: [
-    `gatsby-plugin-styled-components`,
+    "gatsby-plugin-styled-components",
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: `pages`,
+        name: "pages",
         path: `${__dirname}/src/pages/posts`,
       },
     },
-    `gatsby-transformer-remark`,
-    `gatsby-plugin-transition-link`,
-  ],
+    "gatsby-plugin-transition-link",
+    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          "gatsby-remark-relative-images",
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 600,
+              linkImagesToOriginal: false
+            },
+          },
+        ]
+      },
+    },
+  ]
 }
