@@ -5,7 +5,7 @@ date: "2019-07-01"
 title: "Freelance Website"
 role: "Developer"
 tags: ["project", "carrd"]
-postion: ""
+position: "5"
 ---
 
 **Used website builder to create and launch freelance teaching site.** 

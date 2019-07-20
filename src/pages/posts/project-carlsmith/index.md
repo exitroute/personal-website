@@ -5,7 +5,7 @@ date: "2019-06-16"
 title: "Carl Smith Art"
 role: "Consultant"
 tags: ["project", "squarespace"]
-position: ""
+position: "6"
 ---
 
 **Used Squarespace to set up a website for Berlin artist Carl Smith** 

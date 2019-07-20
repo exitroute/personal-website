@@ -30,17 +30,21 @@ const ProjectsPage = ({ data }) => (
     <Section>
       <h2 className="about-header">Projects</h2>
       <div className="wrapper">
+        <p>Here's what I have been working on since September 2017.</p>
         <p>
-          Here's what I have been working on since September 2017.
-        </p>
-        <p>
-          This list includes work that I did before I learned how to code, but had to 
-          develop and launch a website anyway.
+          This list includes work that I did before I learned how to code, but
+          had to develop and launch a website anyway.
         </p>
         {data.allMarkdownRemark.edges
           .filter(
             project => project.node.frontmatter.category === "project-post"
           )
+          .sort((a, b) => {
+            return (
+              Number(a.node.frontmatter.position) -
+              Number(b.node.frontmatter.position)
+            )
+          })
           .map(project => (
             <ProjectContainer key={project.node.id}>
               <StyledLink to={project.node.frontmatter.path}>
@@ -66,6 +70,7 @@ export const projectQuery = graphql`
             date
             title
             category
+            position
           }
         }
       }

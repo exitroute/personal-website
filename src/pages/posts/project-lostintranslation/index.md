@@ -5,7 +5,7 @@ date: "2019-07-01"
 title: "Onboarding Service"
 role: "Founder"
 tags: ["project", "Berlin", buisness]
-postion: ""
+position: "9"
 ---
 
 **My first experience in developing a concept for a website and a business**

@@ -5,7 +5,7 @@ date: "2019-06-16"
 title: "Exit Route"
 role: "Founder & Creative Director"
 tags: ["project", "react"]
-positon: ""
+position: "4"
 ---
 
 **Used website builder to create and launch website for personal projects.** 
