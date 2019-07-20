@@ -5,6 +5,7 @@ date: "2019-06-16"
 title: "ryanoshea.dev"
 role: "Developer"
 tags: ["project", "react"]
+postion: ""
 ---
 
 **ryanoshea.dev** presents me as a developer to the web development communinty

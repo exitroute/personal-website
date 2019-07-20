@@ -5,6 +5,7 @@ date: "2019-06-16"
 title: "Resume App"
 role: "Developer"
 tags: ["project", "react"]
+postion: ""
 ---
 
 **A web application that generates unique URLs so that job candidates can track who sees their work.** 
@@ -18,7 +19,7 @@ tags: ["project", "react"]
 - Bootstrap
 - EJS
 - Webpack
-- Node 
+- Node res
 
 Also using a static site generator by Douglas Matoso:
 

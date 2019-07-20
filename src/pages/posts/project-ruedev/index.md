@@ -5,6 +5,7 @@ date: "2019-06-16"
 title: "Agency"
 role: "Founder"
 tags: ["project", "react"]
+postion: ""
 ---
 
 An agency that targets low value markets and creates jobs for workers entering the development job market.
