@@ -12,7 +12,7 @@ position: "2"
 and marketplace.  
 
 ### Tech
-
+---
 - Gatsby
 - React
 - style-components and CSS Modules
