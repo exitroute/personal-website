@@ -6,8 +6,6 @@ import styled from "styled-components"
 import Header from "./header"
 import Footer from "./footer"
 
-import "./layout.css"
-
 const Container = styled.div`
   display: grid;
   min-height: 100vh;
