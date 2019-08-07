@@ -19,6 +19,12 @@ module.exports = {
         path: `${__dirname}/src/pages/posts`,
       },
     },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
     "gatsby-plugin-transition-link",
     "gatsby-plugin-sharp",
     {
