@@ -27,6 +27,7 @@ const NavLink = styled(Link).attrs({
   display: block;
   margin: 0.25rem 0;
   padding: 0.5rem;
+  border-radius: 3px;
   :hover {
     background: #85bb65;
     color: #fff;
