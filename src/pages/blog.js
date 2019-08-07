@@ -18,10 +18,9 @@ const BlogContainer = styled.div`
   }
 `
 const StyledLink = styled(Link)`
-  color: #000;
-  text-decoration: none;
   :hover {
-    text-decoration-line: underline;
+    text-decoration: none;
+    transition: 250ms;
   }
 `
 
