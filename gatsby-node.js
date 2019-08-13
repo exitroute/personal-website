@@ -19,6 +19,7 @@ exports.createPages = async ({ actions, graphql }) => {
               path
               category
               date
+              position
               tags
             }
           }
