@@ -1,12 +1,12 @@
 const path = require(`path`)
 
-exports.createPages = ({ actions, graphql }) => {
+exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions
 
   const projectTemplate = path.resolve(`src/templates/projectTemplate.js`)
   const blogTemplate = path.resolve(`src/templates/blogTemplate.js`)
 
-  return graphql(`
+  const markdownQueryResult = await graphql(`
     {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
