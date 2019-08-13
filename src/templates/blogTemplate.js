@@ -5,6 +5,9 @@ import Layout from "../components/layout"
 import styled from "styled-components"
 
 const Title = styled.h2`
+  @media (min-width: 992px) {
+    text-align: right;
+  }
   margin-bottom: 0.25rem;
 `
 const Author = styled.p`
