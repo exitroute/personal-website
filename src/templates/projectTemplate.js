@@ -30,7 +30,10 @@ const Div = styled.div`
 const PageNav = styled.div`
   padding: 1rem 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-evenly; 
+  @media (min-width: 992px) {
+      grid-column-start: 2;
+  }
 `
 const PageLink = styled(Link)`
   color: #000;
