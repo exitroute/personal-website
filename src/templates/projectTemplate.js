@@ -1,4 +1,5 @@
 import React from "react"
+import Link from "gatsby-link"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 
@@ -47,7 +48,10 @@ const PageLink = styled(Link)`
   }
 `
 
-export default function projectTemplate({ data }) {
+export default function projectTemplate({ data, pageContext }) {
+  const { next, prev } = pageContext
+  console.log("next", next)
+  console.log("prev", prev)
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
   return (
