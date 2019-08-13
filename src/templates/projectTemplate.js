@@ -36,6 +36,10 @@ export default function projectTemplate({ data }) {
         <Title>{frontmatter.title}</Title>
         <Role>{frontmatter.role}</Role>
         <Div className="wrapper" dangerouslySetInnerHTML={{ __html: html }} />
+        <PageNav className="pageNav">
+          {prev && <PageLink to={prev.frontmatter.path}>Prev</PageLink>}
+          {next && <PageLink to={next.frontmatter.path}>Next</PageLink>}
+        </PageNav>
       </section>
     </Layout>
   )
