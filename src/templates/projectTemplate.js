@@ -26,6 +26,26 @@ const Div = styled.div`
     }
   }
 `
+const PageNav = styled.div`
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-evenly;
+`
+const PageLink = styled(Link)`
+  color: #000;
+  text-decoration: none;
+  display: block;
+  margin: 0.25rem 0;
+  padding: 0.5rem;
+  border: solid 0.5px;
+  border-radius: 3px;
+  :hover {
+    border: solid 0.5px #85bb65;
+    background: #85bb65;
+    color: #fff;
+    transition-duration: 500ms;
+  }
+`
 
 export default function projectTemplate({ data }) {
   const { markdownRemark } = data
