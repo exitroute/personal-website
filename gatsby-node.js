@@ -9,7 +9,7 @@ exports.createPages = async ({ actions, graphql }) => {
   const markdownQueryResult = await graphql(`
     {
       allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
+        sort: { order: ASC, fields: [frontmatter___date] }
         limit: 1000
       ) {
         edges {
@@ -26,24 +26,51 @@ exports.createPages = async ({ actions, graphql }) => {
         }
       }
     }
+  `)
+
   if (markdownQueryResult.errors) {
     console.log(markdownQueryResult.errors)
     throw markdownQueryResult.errors
-    }
-    return result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      if (node.frontmatter.category === "blog-post") {
-        createPage({
-          path: node.frontmatter.path,
-          component: blogTemplate,
-          context: {}, // additional data can be passed via context
-        })
-      } else {
-        createPage({
-          path: node.frontmatter.path,
-          component: projectTemplate,
-          context: {}, // additional data can be passed via context
-        })
-      }
+  }
+
+
+  const posts = markdownQueryResult.data.allMarkdownRemark.edges.sort((a, b) => {
+    return (
+      Number(a.node.frontmatter.position) - Number(b.node.frontmatter.position)
+    )
+  })
+
+  const projectPosts = posts.filter(
+    item => item.node.frontmatter.category === "project-post"
+  )
+
+  const blogPosts = posts.filter(
+    item => item.node.frontmatter.category === "blog-post"
+  )
+
+  projectPosts.forEach(({ node }, index) => {
+    createPage({
+      path: node.frontmatter.path,
+      component: projectTemplate,
+      context: {
+        prev: index === 0 ? null : projectPosts[index - 1].node,
+        next: index === (projectPosts.length - 1)
+            ? null
+            : projectPosts[index + 1].node,
+      },
     })
+  })
+
+  blogPosts.forEach(({ node }, index) => {
+    createPage({
+      path: node.frontmatter.path,
+      component: blogTemplate,
+      context: {
+        prev: index === 0 ? null : blogPosts[index - 1].node,
+        next: index === (blogPosts.length - 1)
+            ? null
+            : blogPosts[index + 1],
+      },
+    })      
   })
 }
