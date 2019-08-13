@@ -26,9 +26,9 @@ exports.createPages = async ({ actions, graphql }) => {
         }
       }
     }
-  `).then(result => {
-    if (result.errors) {
-      return Promise.reject(result.errors)
+  if (markdownQueryResult.errors) {
+    console.log(markdownQueryResult.errors)
+    throw markdownQueryResult.errors
     }
     return result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       if (node.frontmatter.category === "blog-post") {
