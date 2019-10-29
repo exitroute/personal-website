@@ -23,6 +23,7 @@ const NavLink = styled(Link).attrs({
   activeClassName: "active",
 })`
   color: #000;
+  font-size:calc(0.7em + 0.5vw);
   text-decoration: none;
   display: block;
   margin: 0.25rem 0;
@@ -38,6 +39,9 @@ const NavLink = styled(Link).attrs({
     :hover {
       color: #000;
     }
+  }
+  @media (min-width: 992px) {
+    font-size: 1em;
   }
 `
 
