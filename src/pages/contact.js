@@ -38,7 +38,7 @@ const ContactPage = () => (
             <A href="https://github.com/exitroute">@exitroute</A>
           </li>
           <li>Linkedin{" "}
-            <A href="https://github.com/exitroute">@ryanjamesoshea</A></li>
+            <A href="https://linkedin.com/in/ryanjamesoshea">@ryanjamesoshea</A></li>
         </ContactList>
       </div>
     </Section>
