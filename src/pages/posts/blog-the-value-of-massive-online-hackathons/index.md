@@ -1,7 +1,7 @@
 ---
 path: "/rueblog/the-value-of-massive-online-hackathons"
 category: "blog-post"
-date: "2019-06-16"
+date: "2020-03-30"
 title: "The Value of Massive Online Hackathons"
 author: "Ryan James O'Shea"
 tags: ["hackathons", "devloperExperience", "opinion", "innovation", ""]
