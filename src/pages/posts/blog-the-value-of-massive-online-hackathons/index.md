@@ -1,5 +1,5 @@
 ---
-path: "/rueblog/the-value-of-massive-online-hackathons"
+path: "/blog/the-value-of-massive-online-hackathons"
 category: "blog-post"
 date: "2020-03-30"
 title: "The Value of Massive Online Hackathons"
@@ -11,9 +11,9 @@ I self describe as a late entry level developer. One is never too late but 44 wa
 
 I felt the call to action to attend the HackCorona Hackathon after thinking about a [British First World War](https://en.wikipedia.org/wiki/Daddy,_what_did_you_do_in_the_Great_War%3F) recruitment poster and asking myself, “what would I say to my son?"
 
-"Well, I stayed at home, mediating, healing, and continued to rebuild my career."
+"Well, I stayed at home, meditating, and continuing to rebuild my career."
 
-No, not good enough. I had dealt with my self-doubt and anxiety systematically over the last 6 months. Now, it was showtime. Time to get out of my head and into some work with other people.
+No, not good enough. I had dealt with my self-doubt and anxiety systematically over the last 6 months. Time to get out of my head and into some work with other people. This is not war but action is needed.
 
 My only experience in a hackathon had been during my web dev training course when I was on the edge of burning out after force feeding myself javascript for month. The creation of a new module in my brain for programming had given me with 10 day long headache. The organisers had incorrectly assumed that I wanted to lead a team and surprised me into pitching my idea to 60 people. It didn't go down well. Nor did I enjoy the hackathon.
 
