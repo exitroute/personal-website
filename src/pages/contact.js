@@ -4,7 +4,6 @@ import styled from "styled-components"
 import Section from "../components/section"
 import Layout from "../components/layout"
 
-
 const ContactList = styled.ul`
   list-style: none;
 `
@@ -34,11 +33,12 @@ const ContactPage = () => (
         <p>Or at these social media platroms:</p>
         <ContactList>
           <li>
-            Github:{" "}
-            <A href="https://github.com/exitroute">@exitroute</A>
+            Github: <A href="https://github.com/exitroute">@exitroute</A>
           </li>
-          <li>Linkedin{" "}
-            <A href="https://linkedin.com/in/ryanjamesoshea">@ryanjamesoshea</A></li>
+          <li>
+            Linkedin{" "}
+            <A href="https://linkedin.com/in/ryanjamesoshea">@ryanjamesoshea</A>
+          </li>
         </ContactList>
       </div>
     </Section>
