@@ -9,6 +9,8 @@ module.exports = {
     title: "Ryan O'Shea",
     description: "Website for Ryan O'Shea",
     author: "Ryan O'Shea",
+    image: "/src/static/38537609.jpeg",
+    url: "https://www.ryanoshea.dev",
   },
   plugins: [
     "gatsby-plugin-styled-components",
@@ -37,11 +39,11 @@ module.exports = {
             resolve: "gatsby-remark-images",
             options: {
               maxWidth: 600,
-              linkImagesToOriginal: false
+              linkImagesToOriginal: false,
             },
           },
-        ]
+        ],
       },
     },
-  ]
+  ],
 }
