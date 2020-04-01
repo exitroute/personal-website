@@ -13,7 +13,7 @@ const Container = styled.div`
   header,
   main,
   footer {
-    padding: 0px 1.0875rem 1.45rem; 
+    padding: 0px 1.0875rem 1.45rem;
     section {
       max-width: 600px;
       margin: 0 auto 3.5rem;

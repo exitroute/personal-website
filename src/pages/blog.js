@@ -30,8 +30,8 @@ const BlogPage = ({ data }) => (
       <h2 className="about-header">Blog</h2>
       <div className="wrapper">
         <p>
-          Berlin web developer writes about web development, learning 
-          web development, and his projects. 
+          Berlin web developer writes about web development, learning web
+          development, and his projects.
         </p>
         {data.allMarkdownRemark.edges
           .filter(post => post.node.frontmatter.category === "blog-post")
