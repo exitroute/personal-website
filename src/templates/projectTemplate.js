@@ -30,9 +30,9 @@ const Div = styled.div`
 const PageNav = styled.div`
   padding: 1rem 0;
   display: flex;
-  justify-content: space-evenly; 
+  justify-content: space-evenly;
   @media (min-width: 992px) {
-      grid-column-start: 2;
+    grid-column-start: 2;
   }
 `
 const PageLink = styled(Link)`
@@ -53,8 +53,6 @@ const PageLink = styled(Link)`
 
 export default function projectTemplate({ data, pageContext }) {
   const { next, prev } = pageContext
-  console.log("next", next)
-  console.log("prev", prev)
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
   return (
