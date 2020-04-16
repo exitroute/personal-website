@@ -17,7 +17,7 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "pages",
+        name: "posts",
         path: `${__dirname}/src/pages/posts`,
       },
     },
@@ -27,7 +27,6 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    "gatsby-plugin-transition-link",
     "gatsby-plugin-sharp",
     {
       resolve: "gatsby-transformer-remark",
@@ -45,5 +44,6 @@ module.exports = {
         ],
       },
     },
+    "gatsby-plugin-transition-link",
   ],
 }
