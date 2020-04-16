@@ -10,7 +10,7 @@ position: "4"
 
 **Used a website builder [Carrd](https://www.carrd.co) to create and launch website for personal projects.**
 
-The (lostintraslation.de)[https://www.ryanoshea.dev/projects/lostintranslation] made me realise that building websites wasn't as painful as I had imagined.
+The [lostintraslation.de](https://www.ryanoshea.dev/projects/lostintranslation) made me realise that building websites wasn't as painful as I had imagined.
 
 I wanted a simple website for my own projects. I had tried out SquareSpace, Wix and Wordpress but the amount of features was making it difficult for me to make design choices.
 
