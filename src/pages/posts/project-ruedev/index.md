@@ -34,3 +34,128 @@ It works these business areas:
 - train and support experienced juniors to become competent mid or senior level developers.
 
 The project has been pitched at one of Berlin's harshest destroyer of startup dreams, who gave it guarded support and encouraged me to develop this idea.
+
+---
+
+### Details
+
+Below is a JSON object that describes the organisation in terms of:
+
+- Staff as `members`
+- Mission, vision, business drivers and themes, initiatives and epics
+- Sales, contracts and projects
+- Finance
+- Marketing
+
+```
+{
+  "members": {
+    "id": {
+      "name": "",
+      "role": [""],
+      "dates": [{
+        "joined": "",
+        "left": ""
+      }],
+      "location": "",
+      "notes": [],
+      "skills": {},
+      "costToBusiness": []
+    }
+  },
+  "vision": [{ "id": "This is the first vision statement" }],
+  "mission": [{ "id": "This is the first mission statement" }],
+  "drivers": {
+    "description": "",
+    "finance": {
+      "description": "",
+      "themes": [{ "id": "This is a finance theme" }]
+    },
+    "market": {
+      "description": "",
+      "themes": [{ "id": "This is a market theme" }]
+    },
+    "people": {
+      "description": "",
+      "themes": [{ "id": "This is a people theme" }]
+    },
+    "product": {
+      "description": "",
+      "themes": [{ "id": "This is a product theme" }]
+    }
+  },
+  "initiatives": [{ "id": "This is an initiative"}],
+  "epics": [{"id": "This is an epic"}],
+  "lead": {
+    "id": {
+      "name": "",
+      "description": "",
+      "role": "",
+      "organisation": ""
+    }
+  },
+  "opportunity": {},
+  "offer": {},
+  "contract": {
+    "projects": []
+  },
+  "project": {
+    "id": {
+      "title": "",
+      "customer": "",
+      "status": "",
+      "owner": "",
+      "team": "",
+      "overview": {
+        "situation": "",
+        "task": "",
+        "action": "",
+        "result": ""
+      },
+      "tool": {},
+      "link": {}
+    }
+  },
+  "finance": {
+    "balance": [],
+    "invoice": {
+      "invoiceId": {
+        "salesLedger": "",
+        "purchaseLedger": "",
+        "amount": "",
+        "pending": "",
+        "paid": ""
+      }
+    },
+    "wage": {},
+    "standingOrders": {
+      "costs": {
+        "wages": {},
+        "rent": {},
+        "subscriptions": {}
+      },
+      "income": {
+        "funding": {}
+      }
+    }
+  },
+  "marketing": {
+    "project": {
+      "id": {
+        "title": "",
+        "objective": "",
+        "type": "",
+        "audience": "",
+        "cost": {
+          "planned": [],
+          "actual": []
+        },
+        "metrics": {
+          "desired": {},
+          "achieved": {}
+        }
+      }
+    }
+  }
+}
+```
