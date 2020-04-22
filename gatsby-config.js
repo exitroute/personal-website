@@ -6,18 +6,19 @@
 
 module.exports = {
   siteMetadata: {
-    title: "Ryan O'Shea",
-    description: "Website for Ryan O'Shea",
-    author: "Ryan O'Shea",
-    image: "/src/static/38537609.jpeg",
-    url: "https://www.ryanoshea.dev",
+    title: `Ryan O'Shea`,
+    description: `Website for Ryan O'Shea`,
+    author: `Ryan O'Shea`,
+    image: `/src/static/38537609.jpeg`,
+    url: `https://www.ryanoshea.dev`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-styled-components`,
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: "posts",
+        name: `posts`,
         path: `${__dirname}/src/pages/posts`,
       },
     },
@@ -39,15 +40,15 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    "gatsby-plugin-sharp",
+    `gatsby-plugin-sharp`,
     {
-      resolve: "gatsby-transformer-remark",
+      resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          "gatsby-remark-copy-linked-files",
-          "gatsby-remark-relative-images",
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-relative-images`,
           {
-            resolve: "gatsby-remark-images",
+            resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 600,
               linkImagesToOriginal: false,
@@ -56,6 +57,6 @@ module.exports = {
         ],
       },
     },
-    "gatsby-plugin-transition-link",
+    `gatsby-plugin-transition-link`,
   ],
 }
