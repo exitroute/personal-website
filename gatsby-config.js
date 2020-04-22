@@ -13,7 +13,7 @@ module.exports = {
     url: "https://www.ryanoshea.dev",
   },
   plugins: [
-    "gatsby-plugin-styled-components",
+    `gatsby-plugin-react-helmet`,
     {
       resolve: "gatsby-source-filesystem",
       options: {
