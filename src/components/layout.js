@@ -51,6 +51,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
+        <SEO />
         <Container>
           <Header />
           <main>{children}</main>
